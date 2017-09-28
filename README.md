@@ -1,4 +1,4 @@
-## simple-react-firebase
+# simple-react-firebase
 
 This project is an sample application using the technologies React and Firebase database. 
 
