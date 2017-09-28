@@ -4,7 +4,7 @@ This project is an sample application using the technologies React and Firebase 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-## To run this Project
+## To run this project:
 
 This project use [Yarn](https://yarnpkg.com/pt-BR/).<br>
 If you dont have yarn installed in your machine, run: `npm install -g yarn`<br>
