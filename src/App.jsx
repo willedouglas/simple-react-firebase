@@ -12,16 +12,17 @@ class App extends Component {
   }
   
   componentWillMount(){
-    let messagesRef = fire.database().ref('messages').orderByKey().limitToLast(100);
+    const messagesRef = fire.database().ref('messages').orderByKey().limitToLast(100);
+
     messagesRef.on('child_added', snapshot => {
-      let message = { text: snapshot.val(), id: snapshot.key };
+      const message = { text: snapshot.val(), id: snapshot.key };
       this.setState({ messages: [message].concat(this.state.messages) });
     })
   }
 
   addMessage(e){
     e.preventDefault();
-    fire.database().ref('messages').push( this.input.value );
+    fire.database().ref('messages').push(this.input.value);
     this.input.value = '';
   }
 
